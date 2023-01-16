@@ -101,7 +101,7 @@ Random Forest
 
 The model that performed best was the Random Forest and we decided to try to improve it by using GridSearchCV to find the best parameters for it.
 After four Grid Searches we obtained our best performing Random Forest that produced the following confusion Matrix:
-
+<br>
 ![ConfusionMatrix](./Graphs/ConfusionMatrix.png)
 
 To try to obtain even better results we used GradientBoost as our last model.
@@ -124,7 +124,7 @@ This is why we decided to keep the Random Forest as our best model since the per
 ## Features Importance
 One more very important step in our study is to understand what are the main variables that determined the outcome in our models, or simply put what are the most relevant factors that determine if a person is at high risk or not to be hospitalized.
 To do this we can extract this information directly from our models and then we are going to study the top 5 important features.
-
+<br>
 ![Features](./Graphs/Features.png)
 The five most important features in our selection overall for the models are:
 - Pneumonia
@@ -136,21 +136,26 @@ The five most important features in our selection overall for the models are:
 Let us take a closer look at each one of these.
 ### Pneumonia
 Out of the patients that had pneumonia, 86% of them needed hospitalization, while for patients without pneumonia the chance of hospitalization was 12%.
+<br>
 ![Pneumonia](./Graphs/pneum.png)
 ### Age
 We can observe two different trends with age. 
 In general an older age brings a higher chance to be hospitalized, since the hospitalization rate for people between 20 and 30 years old was only 8%, while it was almost 60% for people between 60 and 70, and it reached almost 70% for people between 70 and 80.
  For younger kids instead we see that with age increasing the chance of hospitalization decreases, as it goes from   61% for kids younger than 1, to 30% for kids between 1 and 2 and to 18% for kids between 2 and 3. 
+ <br>
 ![Age](./Graphs/Age.png) 
 ### Diabetes
-Out of the patients that had diabetes: 56% of them needed hospitalization, while for patients without diabetes the    chance of hospitalization was only 23%
+Out of the patients that had diabetes: 56% of them needed hospitalization, while for patients without diabetes the    chance of hospitalization was only 23%.
+<br>
 ![Diabetes](./Graphs/diabetes.png)
 ### Hypertension
 Looking at hypertension: in the patients suffering hypertension 51% of them needed to be hospitalized, while for the patients with regular blood pressure, the chance of hospitalization was 23%.
+<br>
 ![Hypertension](./Graphs/hyper.png)
 
 ### Sex
 Hospitalization based on sex: while only 23% of women needed to be hospitalization, the rate for males was 33%.
+<br>
 ![Sex](./Graphs/Sex.png)
 
 ## Recommendations
@@ -182,11 +187,11 @@ In our specific study, the model identified correctly 83,468 patients and incorr
 
 To further improve our model we could try to work on a broader sample of patients in order to see if other trends would emerge in terms of risk factors.
 
-<br>We could also study more in depth the effect of multiple factors' interaction at play in high-risk patients.
+We could also study more in depth the effect of multiple factors' interaction at play in high-risk patients.
 
-<br>We could refine the model by population or area, fitting it on different samples of different populations, as different groups of people might suffer from diseases or risk factors based on the climate, local health habits, genetic components as well as socio-economic status.
+We could refine the model by population or area, fitting it on different samples of different populations, as different groups of people might suffer from diseases or risk factors based on the climate, local health habits, genetic components as well as socio-economic status.
 
-<br>With more powerful AI tools we could automate the process of extracting the most important factors and studying them. This would result in the model being more efficiently applied to a new disease and study the risk factors while here that selection had to be done by hand.
+With more powerful AI tools we could automate the process of extracting the most important factors and studying them. This would result in the model being more efficiently applied to a new disease and study the risk factors while here that selection had to be done by hand.
 
 ## For More Information
 
