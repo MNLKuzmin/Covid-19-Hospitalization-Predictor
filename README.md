@@ -167,12 +167,6 @@ age and sex together with suffering from pneumonia, diabetes and hypertension.
 <br>Older people and infants under one year old, together with men turned out to be the groups more at risk. <br>Informing the population of this can help people belonging to these groups stay particularly safe by taking extra precautions.
 <br>The CDC should inform healthcare providers of these risk factors so that they could start to specifically treat these conditions and closely follow their high-risk patients.
 
-We do not know when the next pandemic will hit and how many people will need to be hospitalized and what will be the most important factors that determine a patient to be at risk.
-<br>Starting from this model the CDC and local hospitals could become more prepared for the next pandemic.
-<br>By simply using some samples of people that got sick with a new virus, and by fitting and running this model we could find out in a timely manner what are the factors that are most important to pay close attention to.
-<br>With this model, we could have used the months of January and February back in 2020 to study the first Covid-19 patients and understand what factors to look for and how many people we could expect to need hospitalization.
-<br>By applying the same model (fitted for the new disease) to the population of a certain area, we could predict how many people would need to be hospitalized, so a hospital could be prepared in terms of equipment and personnel to be able to treat all the patients in need.
-
 # Conclusions:
 Based on our model we could predict the amount of patients that needed to be hospitalized, reaching an F1 score of 76%, a roc auc score of 90% and with a recall of 77%.
 In our specific study, the model identified correctly 83,468 patients and incorrectly 13,751 with an overall accuracy of 86%. <br>The results reported refer to the test set but the values are almost exactly the same also for the train set.
@@ -183,6 +177,13 @@ In our specific study, the model identified correctly 83,468 patients and incorr
 <br> Older people had a higher chance of needing hospitalizations, especially from their 60s on, with the exception of infants under one year old that were also at higher risk for hospitalization.
 <br>We had learned this from experience, and could gather this information as the pandemic kept progressing and risk factors became clear.
 <br>But the problem is...
+
+We do not know when the next pandemic will hit and how many people will need to be hospitalized and what will be the most important factors that determine a patient to be at risk.
+<br>Starting from this model the CDC and local hospitals could become more prepared for the next pandemic.
+<br>By simply using some samples of people that got sick with a new virus, and by fitting and running this model we could find out in a timely manner what are the factors that are most important to pay close attention to.
+<br>With this model, we could have used the months of January and February back in 2020 to study the first Covid-19 patients and understand what factors to look for and how many people we could expect to need hospitalization.
+<br>By applying the same model (fitted for the new disease) to the population of a certain area, we could predict how many people would need to be hospitalized, so a hospital could be prepared in terms of equipment and personnel to be able to treat all the patients in need.
+
 
 ## Next Steps
 
