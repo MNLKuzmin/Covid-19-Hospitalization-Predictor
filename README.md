@@ -168,10 +168,21 @@ age and sex together with suffering from pneumonia, diabetes and hypertension.
 <br>The CDC should inform healthcare providers of these risk factors so that they could start to specifically treat these conditions and closely follow their high-risk patients.
 
 # Conclusions:
+
+### Best model:
+The one that we selected as our best model was the RandomForestClassifier with parameters that we found after our fourth GridSearchCV.
+<br>The parameters for this model were:
+<br>'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 5, 'min_samples_split': 2, 'n_estimators': 30
+
 Based on our model we could predict the amount of patients that needed to be hospitalized, reaching an F1 score of 76%, a roc auc score of 90% and with a recall of 77%.
-In our specific study, the model identified correctly 83,468 patients and incorrectly 13,751 with an overall accuracy of 86%. <br>The results reported refer to the test set but the values are almost exactly the same also for the train set.
-<br>
-<br>Looking at the best models, the features that turned out to be most important in determining the risk factor for patients were pneumonia, age, diabetes, hypertension, and sex.
+<br>We choose this as our best model because, with the other metrics being comparable to the other models, it was the one with the highest recall.
+<br>We decided to pay closest attention to recall compared to the other metrics because recall accounts for false negatives, which are very important in our business case.
+<br>A false negative would mean that our model identified a patient as not in need to be hospitalized, when actually they were.
+A high number of false negatives therefore would mean that the hospital is not prepared to treat all of the patients, having a shortage of personnel and equipment.
+<br>Because of this we chose the model with the higest recall, that produced the lowest number of false negatives.
+
+### Features:
+Looking at the best models, the features that turned out to be most important in determining the risk factor for patients were pneumonia, age, diabetes, hypertension, and sex.
 <br> The most relevant results:
 <br> Patients with pneumonia turned out to be 7 times more likely to need hospitalization.
 <br> Older people had a higher chance of needing hospitalizations, especially from their 60s on, with the exception of infants under one year old that were also at higher risk for hospitalization.
@@ -183,7 +194,6 @@ We do not know when the next pandemic will hit and how many people will need to 
 <br>By simply using some samples of people that got sick with a new virus, and by fitting and running this model we could find out in a timely manner what are the factors that are most important to pay close attention to.
 <br>With this model, we could have used the months of January and February back in 2020 to study the first Covid-19 patients and understand what factors to look for and how many people we could expect to need hospitalization.
 <br>By applying the same model (fitted for the new disease) to the population of a certain area, we could predict how many people would need to be hospitalized, so a hospital could be prepared in terms of equipment and personnel to be able to treat all the patients in need.
-
 
 ## Next Steps
 
