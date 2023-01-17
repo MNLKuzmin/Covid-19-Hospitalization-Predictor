@@ -54,10 +54,15 @@ The dataset was provided by the Mexican government.
 It contains an enormous number of anonymized patient-related information including pre-conditions.
 The raw dataset consists of 21 unique features and 1,048,576 unique patients.
 In the Boolean features, 1 means "yes" and 2 means "no". values as 97 and 99 are missing data.
-
-sex: 1 for female and 2 for male.
-age: of the patient.
-classification: covid test findings. Values 1-3 mean that the patient was diagnosed with covid in different degrees. 4 or higher means that the patient is not a carrier of covid or that the test is inconclusive.
+| column name    | content         | type of data |
+|----------------|-----------------|--------------|
+| sex            | female and male | binary       |  
+| age            |of the patient   | numerical    | 
+| classification |                 | binary       |    
+|                |                 | binary       |   
+: 1 for female and 2 for male.
+: .
+: covid test findings. Values 1-3 mean that the patient was diagnosed with covid in different degrees. 4 or higher means that the patient is not a carrier of covid or that the test is inconclusive.
 patient type: type of care the patient received in the unit. 1 for returned home and 2 for hospitalization.
 pneumonia: whether the patient already have air sacs inflammation or not.
 pregnancy: whether the patient is pregnant or not.
