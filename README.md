@@ -1,4 +1,4 @@
-# Phase 3 project
+# Covid-19 Hospitalization Predictor
 
 **Author**: Maria Kuzmin
 
